@@ -1,1 +1,41 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background: green;
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.card {
+  display: inline-block;
+  background: white;
+  margin: auto;
+  height: 300px;
+  width: 200px;
+  padding: 20px;
+  font-size: 60px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid black;
+  .pintasup {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    font-size: 60px;
+  }
+  .numero {
+    display: flex;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .pintasdown {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    font-size: 60px;
+  }
+}
