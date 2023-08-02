@@ -6,13 +6,15 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = () => {
-  document.querySelector(".card").classList.add(generarPintaRandom());
+  document.querySelector(".up").innerHTML = generarPintaRandom();
   document.querySelector(".card").innerHTML = generarNumeroRandom();
+  document.querySelector("#down").innerHTML = generarPintaRandom();
 };
 
 let generarPintaRandom = () => {
   let pinta = ["♦", "♥", "♠", "♣"];
   let indexPinta = Math.floor(Math.random() * pinta.length);
+
   return pinta[indexPinta];
 };
 

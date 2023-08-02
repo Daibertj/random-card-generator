@@ -16,11 +16,11 @@ body {
   width: 200px;
   padding: 80px;
   font-size: 60px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   border-radius: 5px;
   border: 1px solid black;
 }
-.up {
+&:up {
   position: absolute;
   top: 0px;
   left: 20px;
@@ -33,9 +33,27 @@ body {
   align-items: center;
   flex-direction: column;
 } */
-.down {
+&:down {
   position: absolute;
   bottom: 0px;
   right: 20px;
   font-size: 60px;
 }
+/* &.spade:before,
+&.spade:after {
+  content: "\2660";
+}
+&.club:before,
+&.club:after {
+  content: "\2663";
+}
+&.heart:before,
+&.heart:after {
+  content: "\2665";
+  color: red;
+}
+&.diamond:before,
+&.diamond:after {
+  content: "\2666";
+  color: red;
+} */
