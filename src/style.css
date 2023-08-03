@@ -1,59 +1,30 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 body {
-  background: green;
-  display: flex;
+  background-color: green !important;
   height: 100vh;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 .card {
-  display: inline-block;
-  background: white;
-  margin: auto;
-  height: 300px;
-  width: 200px;
-  padding: 80px;
-  font-size: 60px;
-  /* margin-top: 50px; */
-  border-radius: 5px;
-  border: 1px solid black;
+  width: 400px;
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
-&:up {
-  position: absolute;
-  top: 0px;
-  left: 20px;
-  font-size: 60px;
+.card span {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 3rem;
 }
-/* .num {
-  position: absolute;
-  height: 40vh;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: column;
-} */
-&:down {
-  position: absolute;
-  bottom: 0px;
-  right: 20px;
-  font-size: 60px;
+.card span:nth-child(1) {
+  text-align: left;
 }
-/* &.spade:before,
-&.spade:after {
-  content: "\2660";
+.card span:nth-child(2) {
+  text-align: center;
 }
-&.club:before,
-&.club:after {
-  content: "\2663";
+.card span:nth-child(3) {
+  text-align: left;
+  transform: rotate(180deg);
 }
-&.heart:before,
-&.heart:after {
-  content: "\2665";
-  color: red;
-}
-&.diamond:before,
-&.diamond:after {
-  content: "\2666";
-  color: red;
-} */
